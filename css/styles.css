@@ -92,6 +92,13 @@
     --font-mono: Consolas, "Andale Mono", Courier, "Courier New", monospace;
 }
 
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* ------------------------------------------------------------------- 
  * ## colors
  * ------------------------------------------------------------------- */
@@ -248,6 +255,50 @@
     /* default button height
      */
     --vspace-btn: var(--vspace-2);
+}
+
+/* 스크롤바 가로 사이즈 */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* 스크롤바 막대기 */
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: rgb(0 210 255);
+}
+
+/* 스크롤바 백그라운드 */
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
+/* 스크롤바 가로 사이즈 */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* 스크롤바 막대기 */
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: rgb(0 210 255);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #EE5844;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #EE5844;
+}
+
+/* 스크롤바 백그라운드 */
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-track:hover {
+    background-color: #000000;
 }
 
 /* on mobile devices below 600px
@@ -842,6 +893,10 @@ textarea {
     justify-content: flex-start;
 }
 
+#skillbar {
+    width: 100%;
+}
+
 .row.row-x-right {
     -ms-flex-pack: end;
     -webkit-box-pack: end;
@@ -996,6 +1051,10 @@ textarea {
     -webkit-box-flex: 0;
     flex: 0 0 100%;
     max-width: 100%;
+}
+
+.tab-12 {
+    width: 100%;
 }
 
 /* ------------------------------------------------------------------- 
@@ -1761,7 +1820,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-    color: #046175;
+    color: rgb(0 210 255);
 }
 
 a:hover,
@@ -1769,6 +1828,9 @@ a:active {
     outline: 0;
 }
 
+.nexon {
+    font-family: 'NEXON Lv1 Gothic OTF';
+}
 
 /* ===================================================================
  * # typography & general theme styles
@@ -2052,7 +2114,7 @@ mark {
 }
 
 hr {
-    border: solid var(--color-border);
+    border: solid #fff;
     border-width: .1rem 0 0;
     clear: both;
     margin: var(--vspace-2) 0 calc(var(--vspace-2) - .1rem);
@@ -2540,6 +2602,7 @@ input[type="button"].btn--primary {
     background: var(--color-btn-primary);
     border-color: var(--color-btn-primary);
     color: var(--color-btn-primary-text);
+    border-radius: 50px;
 }
 
 .btn.btn--primary:hover,
@@ -2552,8 +2615,8 @@ button.btn--primary:focus,
 input[type="submit"].btn--primary:focus,
 input[type="reset"].btn--primary:focus,
 input[type="button"].btn--primary:focus {
-    background: var(--color-btn-primary-hover);
-    border-color: var(--color-btn-primary-hover);
+    background: hsl(246, 79%, 69%);
+    border-color: hsl(246, 79%, 69%);
     color: var(--color-btn-primary-hover-text);
 }
 
@@ -2796,7 +2859,7 @@ button.btn--pill {
     font-weight: 600;
     color: var(--color-text-dark);
     text-transform: uppercase;
-    letter-spacing: .2em;
+
     font-size: calc(var(--text-size) * 0.7778);
     line-height: 2rem;
     position: absolute;
@@ -3168,6 +3231,7 @@ button.btn--pill {
     margin-top: 0;
     margin-bottom: var(--vspace-1_5);
     position: relative;
+    font-family: 'NEXON Lv1 Gothic OTF';
 }
 
 .section-header-allcaps:after {
@@ -3753,6 +3817,7 @@ button.btn--pill {
     color: white;
     margin-top: 0;
     margin-bottom: 0;
+
 }
 
 .s-hero__content h3 {
@@ -4051,6 +4116,7 @@ button.btn--pill {
 .s-about h3 {
     margin-top: 0;
     color: white;
+    font-family: 'NEXON Lv1 Gothic OTF';
 }
 
 .s-about__pic {
