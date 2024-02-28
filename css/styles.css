@@ -85,8 +85,8 @@
  * ------------------------------------------------------------------- */
 
 :root {
-    --font-1: "Predendard";
-    --font-2: "Predendard";
+    --font-1: 'Pretendard';
+    --font-2: 'Pretendard';
     /* monospace
      */
     --font-mono: Consolas, "Andale Mono", Courier, "Courier New", monospace;
