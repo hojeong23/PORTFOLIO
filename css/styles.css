@@ -3489,7 +3489,7 @@ button.btn--pill {
     font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: .4rem;
-    background-color: var(--color-2);
+    background-color: #046175;
     color: white;
     width: var(--header-height);
     height: var(--header-height);
@@ -4313,7 +4313,8 @@ button.btn--pill {
     font-size: 22px;
     color: #000;
     margin: 0;
-    font-weight: 400;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 
@@ -4322,7 +4323,8 @@ button.btn--pill {
     font-size: 14px;
     line-height: 100%;
     margin: 0;
-    color: rgb(255, 207, 207);
+    color: #046175;
+    margin-bottom: 10px;
 }
 
 .folio-item a,
@@ -4368,6 +4370,13 @@ button.btn--pill {
     padding: 3px 2%;
     border: 1px solid #ccc;
     margin-bottom: 5px;
+    border-radius: 50px;
+}
+
+a.pj_btn:hover {
+    background-color: #046175;
+    color: #fff;
+    transition: all 0.5s;
 }
 
 /* on hover
