@@ -1442,7 +1442,7 @@ textarea {
     max-width: 100%;
 }
 
-.folio-list>div:nth-child(1) {
+.folio-list>div {
     margin-bottom: 10px;
 }
 
